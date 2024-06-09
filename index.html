@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task14</title>
+</head>
+<body>
+    <h1>js task14</h1>
+
+
+
+
+    <script> 
+        /* 4.take any array convert into a string
+
+
+inp:[2,3,4,5,5,6,7,7,8,9]
+output : 2345567789
+ */
+ var arr=[2,3,4,5,5,6,7,7,8,9]
+s=""
+for(i=0;i<arr.length;i++){
+    s=s+arr[i]
+}
+console.log(s)
+/*1.write a js program to convert this array without using any methods
+input : a=[1,[2,4,5],[3,[4,6,7]],4];
+output : a=[1,2,4,5,3,4,6,7,4]
+*/
+var array=[1,[2,4,5],[3,[4,6,7]],4]
+ 
+var a = array.flat(Infinity);
+
+console.log(a)
+/*2.Take any array and print the values above 3, then store them in a new array.
+*/
+
+
+var a=[1,2,3]
+b=[]
+for (i=0;i<a.length;i++){
+    b.push(a[i])
+    
+}
+console.log(b)
+
+/*  3.take any array and check the all value should be above 1 
+
+
+if above 1 then print "true" else "false"
+*/
+
+var arra=[2,1,2,3,4]
+
+for(i=0;i<arra.length;i++){
+    var temp=arra[i]
+    if(temp>1){
+    console.log("true")
+}
+if(!(temp>1)){
+    console.log("false")
+}
+}
+/*inp : var a = ["hello","kumar","raju"]
+
+
+o/p:[[eo,hll],[ua,kmr],[au,rj]]
+*/
+// inp : var a = ["hello","kumar","raju"]
+
+
+// o/p:[[eo,hll],[ua,kmr],[au,rj]]
+
+var a=["hello","kumar","raju"]
+arr=[]
+arr1=[]
+vowel=""
+conso=""
+arr2=[]
+ vowel1=""
+conso1=""
+arr3=[]
+ vowel2=""
+conso2=""
+
+for(i=0;i<a.length;i++){
+    
+}
+for(j=0;j<a[0].length;j++){
+    let vv=(a[0][j] ==='a'|| a[0][j] ==='A'||a[0][j] ==='e'||a[0][j] ==='E'||a[0][j] ==='i'||a[0][j] ==='I'||a[0][j] ==='o'||a[0][j] ==='O'||a[0][j] ==='u'||a[0][j] ==='U')
+    if(vv){
+        vowel+=a[0][j]
+        
+    }
+    if(!vv){
+        conso+=a[0][j]
+    }
+}
+arr1.push(vowel,conso)
+
+
+for(k=0;k<a[1].length;k++){
+    let vv1=(a[1][k] ==='a'|| a[1][k] ==='A'||a[1][k] ==='e'||a[1][k] ==='E'||a[1][k] ==='i'||a[1][k] ==='I'||a[1][k] ==='o'||a[1][k] ==='O'||a[1][k] ==='u'||a[1][k] ==='U')
+    if(vv1){
+        vowel1+=a[1][k]
+        
+    }
+    if(!vv1){
+        conso1+=a[1][k]
+    }
+}
+arr2.push(vowel1,conso1)
+
+
+for(l=0;l<a[2].length;l++){
+    let vv2=(a[1][l] ==='a'|| a[2][l] ==='A'||a[2][l] ==='e'||a[2][l] ==='E'||a[2][l] ==='i'||a[2][l] ==='I'||a[2][l] ==='o'||a[2][l] ==='O'||a[2][l] ==='u'||a[2][l] ==='U')
+    if(vv2){
+        vowel2+=a[2][l]
+        
+    }
+    if(!vv2){
+        conso2+=a[2][l]
+    }
+}
+arr3.push(vowel2,conso2)
+arr.push(arr1,arr2,arr3)
+console.log(arr)
+
+
+</script>
+   
+</body>
+</html>
